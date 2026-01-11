@@ -32,6 +32,7 @@ Impact:
 Eliminates weak authentication paths and significantly reduces credential theft risk.
 
 #2. LDAP Signing & Channel Binding : Protected LDAP traffic against man‑in‑the‑middle attacks.
+
 Key Measures:
 - Required LDAP server signing
 - Required LDAP client signing
@@ -40,6 +41,7 @@ Impact:
 Ensures all LDAP communication is integrity‑checked and tamper‑resistant.
 
 3. SMB & SYSVOL Hardening : Secured file replication and administrative shares.
+
 Key Measures:
 - Disabled SMBv1
 - Enforced SMB signing (client + server)
@@ -50,6 +52,7 @@ Prevents exploitation of legacy SMB protocols and strengthens SYSVOL integrity.
 
 4. Service Minimization
 Reduced attack surface by disabling unnecessary services.
+
 Services Disabled:
 - Remote Registry
 - Fax
@@ -62,6 +65,7 @@ Impact:
 Minimizes lateral movement paths and reduces exploitable services.
 
 5. Privilege & Logon Restrictions : Implemented strict access control on domain controllers.
+
 Key Measures:
 - Only Domain Admins allowed local logon
 - Denied local logon for all non‑privileged accounts
@@ -71,6 +75,7 @@ Impact:
 Prevents unauthorized access and reduces insider threat exposure.
 
 6. Windows Firewall Hardening : Locked down inbound traffic to only essential domain controller services.
+
 Allowed:
 - LDAP / LDAPS
 - Kerberos
